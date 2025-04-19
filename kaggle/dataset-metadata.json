@@ -1,0 +1,32 @@
+{
+  "title": "Discogs Music Database",
+  "id": "wyattowalsh/discogs",
+  "licenses": [
+    { "name": "CC0-1.0" }
+  ],
+  "subtitle": "Auto‑updating monthly snapshot of Discogs in dual‑format DuckDB & SQLite databases",
+  "description": "This dataset is an auto‑maintained monthly snapshot of the Discogs public data dump, continuously refreshed by the cron‑driven ETL pipeline (`discogs_etl.ipynb`). It provides data in two query‑ready formats: DuckDB (analytics‑optimized, parallel OLAP) and SQLite (fully previewable in Kaggle UI).\n\nTables include: artists, labels, releases, masters.\n\nUse DuckDB for large aggregations; use SQLite for quick schema and metadata preview.",
+  "keywords": [
+    "music",
+    "discogs",
+    "duckdb",
+    "sqlite",
+    "database",
+    "art"
+  ],
+  "is_private": false,
+  "resources": [
+    {
+      "path": "discogs.duckdb",
+      "description": "Discogs data stored as a DuckDB database for high‑performance analytics."
+    },
+    {
+      "path": "discogs.sqlite",
+      "description": "Same dataset in SQLite format for full preview support in Kaggle's UI."
+    },
+    {
+      "path": "etl.ipynb",
+      "description": "Cron‑ready notebook that downloads, transforms, and versions the monthly Discogs dump."
+    }
+  ]
+}

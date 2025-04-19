@@ -1,1 +1,2 @@
-# discogs
+# Discogs Music Dataset Repo
+

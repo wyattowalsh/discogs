@@ -1,0 +1,9 @@
+[project]
+name = "discogs"
+version = "0.1.0"
+description = "repo for the kaggle discogs dataset"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "kaggle>=1.7.4.2",
+]
